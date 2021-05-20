@@ -15,9 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//課題4
-Route::group(['prefix' => 'admin'], function() {
-    Route::get('profile/edit', 'Admin\ProfileController@add')->middleware('auth');
+
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
+     Route::get('news/create', 'Admin\NewsController@add');
+     Route::post('profile/create', 'Admin\ProfileController@create'); # 追記
 });
 Auth::routes();
 
