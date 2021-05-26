@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col-md-8 mx-auto">
                 <h2>ニュース新規作成</h2>
-              <form action="{{ action('Admin\profileController@create') }}" ></form>
+              <form action="{{ action('Admin\ProfileController@create') }}" >
               
               @if (count($errors) > 0)
                         <ul>
@@ -49,6 +49,7 @@
                             <input type="text" class="form-control" name="introduction" value="{{ old('title') }}">
                        {{ csrf_field() }}
                             <input type="submit" class="btn btn-primary" value="更新">
+                   </form>
                     </div>
             </div>
         </div>
