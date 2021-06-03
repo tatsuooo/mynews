@@ -3,9 +3,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\News;
-
 use App\History;
-
 use Carbon\Carbon;
  class NewsController extends Controller
 {
