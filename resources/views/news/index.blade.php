@@ -16,6 +16,11 @@
                                 </div>
                                 <div class="title p-2">
                                     <h1>{{ str_limit($headline->title, 70) }}</h1>
+                                    <header>
+
+        <a href="https:/ntp.msn.com/edge/ntp?locale=ja&title=%E6%96%B0%E3%81%97%E3%81%84%E3%82%BF%E3%83%96&dsp=1&sp=Bing&prerender=1">最新のニュース</a>
+        </header>
+                                    
                                 </div>
                             </div>
                         </div>

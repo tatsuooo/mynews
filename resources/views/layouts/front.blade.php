@@ -25,8 +25,15 @@
         <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
         {{-- この章の後半で作成するCSSを読み込みます --}}
         <link href="{{ secure_asset('css/front.css') }}" rel="stylesheet">
+          
     </head>
     <body>
+        <header>
+
+        <a href="https:/ntp.msn.com/edge/ntp?locale=ja&title=%E6%96%B0%E3%81%97%E3%81%84%E3%82%BF%E3%83%96&dsp=1&sp=Bing&prerender=1">最新のニュース</a>
+        </header>
+        
+        
         <div id="app">
             {{-- 画面上部に表示するナビゲーションバーです。 --}}
             <nav class="navbar navbar-expand-md navbar-dark navbar-laravel">
@@ -80,5 +87,8 @@
                 @yield('content')
             </main>
         </div>
+      
+  
+        
     </body>
 </html>
